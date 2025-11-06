@@ -228,19 +228,17 @@ export default function ProzessDokuApp() {
         pdf.addImage(ph, "JPEG", margin, y, w, h);
         y += h + 10;
       }
+pdf.setFont("helvetica", "normal");
+pdf.setFontSize(11);
+for (let i = 0; i < step.texts.length; i++) {
+  const t = step.texts[i];
+  if (y + 30 > pageH - margin) addPage();
+  if (t.important) pdf.setTextColor(200, 0, 0);
+  pdf.text(`${step.index}.${i + 1} ${t.content}`, margin, y);
+  if (t.important) pdf.setTextColor(0, 0, 0);
+  y += 18;
+}
 
-      pdf.setFont("helvetica", "normal");
-      pdf.setFontSize(11);
-      for (const [i, t] of step.texts.entries()) {
-        if (y + 30 > pageH - margin) addPage();
-        if (t.important) pdf.setTextColor(200, 0, 0);
-        pdf.text(`${step.index}.${i + 1} ${t.content}`, margin, y);
-        if (t.important) pdf.setTextColor(0, 0, 0);
-        y += 18;
-      }
-
-      y += 10;
-    }
 
     // Seitenzahlen
     const total = pdf.getNumberOfPages();
