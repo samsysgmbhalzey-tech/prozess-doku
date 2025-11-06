@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.js": "/prozess-doku/static/js/main.597b9bef.js",
+    "static/js/239.8af4760a.chunk.js": "/prozess-doku/static/js/239.8af4760a.chunk.js",
+    "static/js/213.bc75f6be.chunk.js": "/prozess-doku/static/js/213.bc75f6be.chunk.js",
+    "static/js/455.ec64ca46.chunk.js": "/prozess-doku/static/js/455.ec64ca46.chunk.js",
+    "index.html": "/prozess-doku/index.html",
+    "main.597b9bef.js.map": "/prozess-doku/static/js/main.597b9bef.js.map",
+    "239.8af4760a.chunk.js.map": "/prozess-doku/static/js/239.8af4760a.chunk.js.map",
+    "213.bc75f6be.chunk.js.map": "/prozess-doku/static/js/213.bc75f6be.chunk.js.map",
+    "455.ec64ca46.chunk.js.map": "/prozess-doku/static/js/455.ec64ca46.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.597b9bef.js"
+  ]
+}
